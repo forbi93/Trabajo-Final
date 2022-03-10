@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <div class="loaderBox">
+        <div class="loader">
+            <img src="imagenes/logo.svg" alt="">
+            <h1>Little Pets </h1>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+             <button onclick="history.back()">atras</button>
+             <a href="primerapag.html">
+                <button >inicio</button>
+             </a>
+            <div class="logo">
+                <img src="imagenes/logo.svg" alt="">
+                <h1><a href="inicio.html">Little Pets</a></h1>
+            </div>
+
+        <ul class="menuList">
+              <li class="menuItem"><a href="inicio.html">Inicio</a></li>
+              <li class="menuItem "><a href="adopta.jsp">Adopta</a></li>
+              <li class="menuItem"><a href="nosotros.html">Nosotros</a></li>
+              <li class="menuItem"><a href="contacto.html">Contactanos</a></li>
+              <li class="menuItem"><a href="login.jsp">Login</a></li>
+        
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="secBox1">
+        <div class="container">
+            <div class="imgCont">
+                <img class="" src="imagenes/perro10.png" alt="">
+            </div>
+            <h3>¿Quienes somos?</h3>
+            <div class="txtBox">
+                <p>Somos un grupo de jóvenes que busca encontrar un hogar a perritos abandonados y sin hogar. Esta asociación es sin fines de lucro, por lo que buscamos iniciativas sostenibles. </p>
+
+                <div class="artBox">
+                    <article>
+                        <h4>Mision</h4>
+                        <p>Buscar y ayudar a perritos en estado vulnerable, encontrar hogar a perritos abandonao darles tratamiento y darlos en adopcion.</p>
+                        <img src="imagenes/objetivo.svg" alt="">
+                    </article>
+
+                    <article>
+                        <h4>Vision</h4>
+                        <p>Nuestra vision como grupo de rescatistas es ayudar a la mayor cantidad de perritos que podamos, esperando que un dia no tengamos que ayudar a ninguno. </p></p>
+                        <img src="imagenes/vision.svg" alt="">
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secBox2">
+        <div class="container">
+            <h3>Nuestras Experiencias</h3>
+            <p>Hemos trabajado con asociaciones de rescatistas y grupos de ayuda animal, logrando dar en adopcion a mas de 500 perros en todo el Perú. ¡Anímate y únete a la causa o ayudanos con donaciones o víveres!</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="imagenes/ayuda1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagenes/ayuda2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagenes/ayuda3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagenes/ayuda2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagenes/ayuda1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagenes/ayuda2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagenes/ayuda1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagenes/ayuda2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagenes/ayuda1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagenes/ayuda2.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logoFooter">
+            <img src="imagenes/logo.svg" alt="">
+            <h1>Little Pets</h1>
+        </div>
+
+        <div class="listFoot">
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>Ayudamos a perritos en Apuros </li>
+                <li>Sin fines de Lucro </li>
+                <li>Adopta desde cualquier lugar del Peru  </li>
+            </ul>
+        </div>
+
+        <div class="listFoot">
+            <h4>Redes</h4>
+            <ul>
+                <li>Whatsapp</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+
+        <div class="listFoot">
+            <h4>Contactenos</h4>
+            <ul>
+                <li>Telefono:123456</li>
+                <li>LittlePets@gmail.com</li>
+                <li>Lpets.Outlook.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<script src="js/loader.js">
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
+
+</html>

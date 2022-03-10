@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Litle Pets</title>
+</head>
+
+<body>
+    <div class="loaderBox">
+        <div class="loader">
+            <img src="imagenes/logo.svg" alt="">
+            <h1>Little Pets</h1>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+             <button onclick="history.back()">atras</button>
+            <div class="logo">
+                <img src="imagenes/logo.svg" alt="">
+                <h1><a href="inicio.html">Little Pets</a></h1>
+            </div>
+
+            <ul class="menuList">
+              <li class="menuItem"><a href="inicio.html">Inicio</a></li>
+              <li class="menuItem "><a href="adopta.jsp">Adopta</a></li>
+              <li class="menuItem"><a href="nosotros.html">Nosotros</a></li>
+              <li class="menuItem"><a href="contacto.html">Contactanos</a></li>
+              <li class="menuItem"><a href="login.jsp">Login</a></li>
+        
+            </ul>
+
+       
+        </nav>
+    </header>
+
+    <section class="secBox1">
+        <div class="container">
+            <div class="txt1">
+                <h3>Nuestras redes</h3>
+                <p>Siguenos en nuestras redes y apoyanos mediante ellas, si ves a algun animalito abandonado y no sabes a quien llamar no dudes en avisarnos y realizaremos todo lo posibles por ayudar al perrito necesitado.</p>
+            </div>
+
+            <ul class="listRedes">
+                <li>
+                    <a href=""><img src="imagenes/facebook.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="imagenes/instagram.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="imagenes/whatsapp.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="formSection">
+        <div class="container">
+            <div>
+                <h3>Contactenos</h3>
+                <p>Si quieres donar o tienes algo que decirnos, escribenos. <br> Esperamos tu mensaje </p>
+            </div>
+            <div class="imgCont">
+                <img src="imagenes/perro7.png" alt="">
+            </div>
+            <form action="ServletCont" method="post" class="formulario" id="formulario" onsubmit="return validar()">
+                <div id="grupo__nombre">
+                    <label for="ContactoID">contacto</label>
+                    <input type="text" class="formulario__input" name="ContactoID" id="nombre" placeholder="John Doe">
+                    <p class="error">Nombre no valido</p>
+                </div>
+
+                <div id="grupo__telefono">
+                    <label for="AdoptanteID">Adoptante</label>
+                    <input type="text" class="formulario__input" name="AdoptanteID" id="telefono" placeholder="4491234567">
+                    <p class="error">Numero no valido</p>
+                </div>
+                   <div id="grupo__telefono">
+                    <label for="EncargadoID">Encargado</label>
+                    <input type="text" class="formulario__input" name="EncargadoID" id="telefono" placeholder="4491234567">
+                    <p class="error">Numero no valido</p>
+                </div>
+
+                <div id="grupo__correo">
+                    <label for="Email">Email</label>
+                    <input type="email" class="formulario__input" name="Email" id="correo" placeholder="correo@correo.com">
+                    <p class="error">Correo no valido</p>
+                </div>
+
+                <div>
+                    <label for="Celular">Celular</label>
+                    <textarea id="mensaje" type="text" name="Celular""></textarea>
+                    <p class="error">Mensaje no valido</p>
+                </div>
+                
+                  <div>
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea id="mensaje" type="text" name="Mensaje""></textarea>
+                    <p class="error">Mensaje no valido</p>
+                </div>
+                <div class="btnEnviar">
+                    <button type="submit" name="submit" class="formulario__btn">Enviar</button>
+                    <p class="mensajeExito" id="mensajeExito">Gracias por contactarnos!!!</p>
+                </div>
+                
+                <input type="hidden" name="op" value="nuevo" >
+            </form>
+            
+            <script>
+                
+            function validar() {
+
+    var ContactoID,AdoptanteID,Celular,Email,Mensaje,EncargadoID;
+    ContactoID = document.getElementById("ContactoID").value;
+    AdoptanteID = document.getElementById("AdoptanteID").value;
+    EncargadoID = document.getElementById("EncargadoID").value;
+    Celular = document.getElementById("CelularID").value;
+    Email = document.getElementById("Email").value;
+    Mensaje = document.getElementById("Mensaje").value;
+     
+  
+    
+  
+    if (ContactoID === "" || AdoptanteID === "" || EncargadoID === "" || Celular === "" || Email === "" || Mensaje === "") {
+        alert("todos los campos son obligatorios");
+        return false;
+    }
+    
+    else if(ContactoID.length>10) {
+        alert("el nombre es muy largo");
+        return false;
+    }
+       else if(AdoptanteID.length>10) {
+        alert("el nombre es muy largo");
+        return false;
+    }
+       else if(EncargadoID.length>10) {
+        alert("el nombre es muy largo");
+        return false;
+    }
+    else if(isNaN(Celular) || Celular.length !=9){
+        alert("el telefono ingresado es invalido")
+        return false;
+    }
+   
+    else if(Email.length>30){
+        alert("el corrreo es muy largo")
+        return false;
+    }
+ 
+    else if(Mensaje.length>100){
+        alert("el mensaje es muy larga")
+        return false;
+  
+            
+            
+           </script>
+        
+        </div>
+        
+        
+        
+    </section>
+  
+
+    <footer>
+        <div class="logoFooter">
+            <img src="imagenes/logo.svg" alt="">
+            <h1>Little Pets</h1>
+        </div>
+
+        <div class="listFoot">
+            <h4>Caracteristicas</h4>
+            <ul>
+                <li>Ayudamos a perritos en Apuros </li>
+                <li>Sin fines de Lucro </li>
+                <li>Adopta desde cualquier lugar del Peru </li>
+            </ul>
+        </div>
+
+        <div class="listFoot">
+            <h4>Redes</h4>
+            <ul>
+                <li>Whatsapp</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+
+        <div class="listFoot">
+            <h4>Contactenos</h4>
+            <ul>
+                <li>Telefono:123456</li>
+                <li>LittlePets@gmail.com</li>
+                <li>Lpets.Outlook.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="js/loader.js">
+</script>
+
+</html>

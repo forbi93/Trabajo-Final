@@ -1,0 +1,95 @@
+/*---------------seccion 1------------*/
+
+.secBox1 .container {
+    position: relative;
+    padding: 80px 60px;
+}
+
+.imgCont {
+    position: absolute;
+    right: 10px;
+    top: 180px;
+}
+
+.imgCont img {
+    width: 450px;
+    height: auto;
+}
+
+.txtBox {
+    width: 100%;
+    position: float;
+    float: left;
+}
+
+.txtBox p {
+    width: 700px;
+}
+
+.artBox {
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.artBox article {
+    width: 48%;
+    position: relative;
+}
+
+.artBox article p {
+    width: 210px;
+    font-size: 12px;
+    text-align: left;
+    margin: 0;
+}
+
+.artBox article img {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 85px;
+}
+
+
+/**/
+
+.secBox2 .container {
+    position: relative;
+    padding: 50px 50px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.swiper-slide {
+    height: 300px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+}

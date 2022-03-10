@@ -1,0 +1,55 @@
+/*-------------Footer----------------*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 10px 0px 10px;
+    padding: 50px 30px 50px 30px;
+    border-top: 1px solid rgba(95, 95, 95, 0.267);
+}
+
+
+/*Logo del Foot*/
+
+.logoFooter {
+    display: flex;
+    align-items: center;
+}
+
+.logoFooter img {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.logoFooter h1 {
+    font-size: 40px;
+}
+
+
+/*listas*/
+
+.listFoot {
+    width: 200px;
+}
+
+.listFoot h4 {
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(22, 189, 64);
+}
+
+.listFoot ul {
+    padding-left: 20px;
+}
+
+.listFoot ul li {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/*responsive*/
+
+@media (max-width: 1325px) {
+
+}

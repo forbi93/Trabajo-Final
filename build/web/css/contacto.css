@@ -1,0 +1,152 @@
+.secBox1 {
+    padding: 50px 0px 0px 0px;
+}
+
+.txt1 p {
+    text-align: center;
+}
+
+.listRedes {
+    margin: 50px 0px 80px 0px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.listRedes li a img {
+    width: 60px;
+}
+
+
+/*---------------------------------estilos del formulario--------------------------------------*/
+
+.formSection {
+    padding: 0px 0px 0px 240px;
+    position: relative;
+}
+
+.formSection .container {
+    padding: 0px;
+}
+
+.imgCont {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+
+.imgCont img {
+    width: 450px;
+    height: 450px;
+    box-shadow: 2px 2px 2px 1px rgba(139, 111, 240, 0.2);
+    border-radius: 50%;
+}
+
+.formulario {
+    margin: 0px 0px 0px 0px;
+    width: 450px;
+}
+
+.formulario div {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.formulario div label {
+    display: block;
+    color: #5d6161;
+    font-size: 13px;
+    font-weight: 700;
+    color: #073042;
+}
+
+.formulario div textarea {
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 10px 0px 5px 5px;
+    margin: 5px 0px 0px 0px;
+    resize: none;
+}
+
+.formulario__input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 10px 0px 5px 5px;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+
+/*-------------------errores input-----------------------------*/
+
+.error {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: red;
+    display: none;
+    text-align: left;
+}
+
+.error-activo {
+    display: block;
+}
+
+
+/*-----------------------------------estilos del boton---------------------------*/
+
+.btnEnviar {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+}
+
+.formulario__btn {
+    position: relative;
+    width: 150px;
+    margin: 8px 0px 0px 0px;
+    background: #073042;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    /* Shadow-1 */
+    box-shadow: 0px 7px 17px rgba(7, 48, 66, 0.2);
+    border-radius: 56px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formulario__btn img {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.formulario__btn:hover {
+    background: #648695;
+    box-shadow: 0px 7px 17px rgba(100, 134, 149, 0.24);
+    border-radius: 56px;
+    transition: all .8s;
+}
+
+
+/*-----------------------------Mensaje Exito-------------------------*/
+
+.mensajeExito {
+    font-size: 20px;
+    color: #119200;
+    display: none;
+}
+
+.exito-activo {
+    display: block;
+}
